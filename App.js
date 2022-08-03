@@ -1,11 +1,11 @@
 import { View, Text, StyleSheet } from 'react-native'
 import React from 'react'
-import Header from './src/components/header/Header'
+import Home from './src/screens/Home';
 
 const App = () => {
   return (
-    <View >
-      <Header />
+    <View style={{backgroundColor: "#eee", flex: 1}}>
+      <Home />
     </View>
   )
 };

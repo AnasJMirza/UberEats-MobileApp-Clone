@@ -3,15 +3,15 @@ import {StyleSheet} from 'react-native';
 import React from 'react';
 
 const HeaderBtn = props => {
-
   return (
     <TouchableOpacity
       style={{
         ...styles.container,
         backgroundColor: props.activeTab === props.title ? 'black' : 'white',
       }}
-      onPress={()=>{props.setActiveTab(props.title)}}
-      >
+      onPress={() => {
+        props.setActiveTab(props.title);
+      }}>
       <Text
         style={{
           ...styles.btnText,
