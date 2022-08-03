@@ -4,10 +4,14 @@ import React from 'react'
 import HeaderBtn from '../headerBtn/HeaderBtn';
 
 const Header = () => {
+
+  const [isActive, setIsActive] = React.useState('Delivery');
+
+
   return (
     <View style={styles.container}>
-      <HeaderBtn title = "Delivery" backgroundColor="black"  color="white" />
-      <HeaderBtn title = "Pickup" backgroundColor="white"  color="black" />
+      <HeaderBtn title = "Delivery" backgroundColor="black"  color="white" activeTab={isActive} setActiveTab={setIsActive}/>
+      <HeaderBtn title = "Pickup" backgroundColor="white"  color="black" activeTab={isActive} setActiveTab={setIsActive} />
     </View>
   )
 };
